@@ -2,3 +2,6 @@ artifacts/obj/WebAppAngularJsHelloWorld/Debug
 src/WebAppAngularJsHelloWorld/wwwroot/lib
 src/WebAppAngularJsHelloWorld/bower_components
 src/WebAppAngularJsHelloWorld/node_modules
+.vs
+src/WebAppAngularJsHelloWorld/WebAppAngularJsHelloWorld.kproj.user
+src/WebAppAngularJsHelloWorld/wwwroot/bin

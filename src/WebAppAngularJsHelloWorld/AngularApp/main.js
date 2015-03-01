@@ -5,7 +5,7 @@
 		$routeProvider
 			.when('/home', {
 				templateUrl: 'home.html',
-				controller: 'StudentController'
+				controller: 'HomeController'
 			})
 			.when('/viewStudents', {
 				templateUrl: 'viewStudents.html',
@@ -27,5 +27,4 @@
 			$scope.message = "Click on the hyper link to view the students list.";
 		}]
 	);
-
 })();

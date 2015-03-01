@@ -10,3 +10,4 @@
 /// <reference path="lib/angular-route/angular-route.js" />
 /// <reference path="../angularapp/main.js" />
 /// <reference path="main.js" />
+/// <reference path="../angularapp/controllers/homecontroller.js" />
