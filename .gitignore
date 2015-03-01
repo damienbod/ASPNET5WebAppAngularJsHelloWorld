@@ -1,0 +1,4 @@
+artifacts/obj/WebAppAngularJsHelloWorld/Debug
+src/WebAppAngularJsHelloWorld/wwwroot/lib
+src/WebAppAngularJsHelloWorld/bower_components
+src/WebAppAngularJsHelloWorld/node_modules
