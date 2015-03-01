@@ -4,11 +4,11 @@
     var module = angular.module('mainApp');
    
 	// this code can be used with uglify
-    module.controller('HomeController',
+    module.controller('DetailsController',
 		[
 			'$scope',
 			function ($scope) {
-				$scope.message = "c-HomeController";
+				$scope.message = "c-DetailsControllers";
 			}
 		]
 	);
