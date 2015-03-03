@@ -7,10 +7,14 @@
     module.controller('DetailsController',
 		[
 			'$scope',
-			function ($scope) {
-				$scope.message = "c-DetailsControllers";
-			}
+			'$log',
+			DetailsControllers
 		]
 	);
+
+    function DetailsControllers($scope, $log) {
+    	$log.info("DetailsControllers called");
+    	$scope.message = "c-DetailsControllers";
+    }
 
 })();

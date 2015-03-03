@@ -7,10 +7,30 @@
     module.controller('HomeController',
 		[
 			'$scope',
-			function ($scope) {
-				$scope.message = "c-HomeController";
-			}
+			'$log',
+			"FastestAnimalService",
+			HomeController
 		]
 	);
+
+    function HomeController($scope, $log, FastestAnimalService) {
+    	$log.info("HomeController called");
+    	$scope.message = "c-HomeController";
+
+    	$scope.getAnimals = function() {
+    		FastestAnimalService.getAnimals()
+			    .then(onSuccess, onError);
+    	}
+
+    	function onSuccess(response) {
+    		$scope.animals = response;
+    	}
+
+    	function onError(reason) {
+    		$scope.error = reason;
+    	}
+    }
+
+ 
 
 })();

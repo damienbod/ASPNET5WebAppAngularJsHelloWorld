@@ -7,8 +7,9 @@
 /// <reference path="lib/hammer.js/hammer.js" />
 /// <reference path="lib/bootstrap-touch-carousel/js/bootstrap-touch-carousel.js" />
 /// <reference path="lib/angular-route/angular-route.js" />
-/// <reference path="../angularapp/main.js" />
 /// <reference path="../angularapp/controllers/homecontroller.js" />
 /// <reference path="myangularapp.js" />
-/// <reference path="../angularapp/controllers/homecontroller - copy.js" />
 /// <reference path="lib/angular/angular.js" />
+/// <reference path="../AngularApp/index.js" />
+/// <reference path="../AngularApp/Controllers/DetailsController.js" />
+/// <reference path="../angularapp/services/fastestanimalservice.js" />

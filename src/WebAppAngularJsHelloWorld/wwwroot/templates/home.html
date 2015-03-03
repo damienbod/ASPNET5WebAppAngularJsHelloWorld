@@ -1,5 +1,26 @@
 ﻿<div class="container">
 	<h2> Home template </h2>
+	<button ng-click="getAnimals()">get Animals</button>
 	<p>{{message}}</p>
+
+	<table>
+		<thead>
+			<tr>
+				<th>id</th>
+				<th>Name of Animal</th>
+				<th>Speed</th>
+				<th>Description</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="animal in animals">
+				<td>{{animal.Id}}</td>
+				<td>{{animal.AnimalName}}</td>
+				<td>{{animal.Speed}}</td>
+				<td>{{animal.Data}}</td>
+			</tr>
+		</tbody>
+	</table>
+	
 	<a href="#/details"> View Details</a>
 </div>
