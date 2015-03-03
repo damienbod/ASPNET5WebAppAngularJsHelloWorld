@@ -7,7 +7,7 @@
 				templateUrl: 'templates/home.html',
 				controller: 'HomeController'
 			})
-			.when('/details', {
+			.when('/details/:Id', {
 				templateUrl: 'templates/details.html',
 				controller: 'DetailsController'
 			})

@@ -8,12 +8,9 @@ namespace WebAppAngularJsHelloWorld.Controllers
 	[Route("api/[controller]")]
 	public class FastestAnimalController : Controller
     {
-		[HttpGet]
-		public IEnumerable<FastestAnimal> Get()
+		private List<FastestAnimal> _animals = new List<FastestAnimal>
 		{
-			return new List<FastestAnimal>
-			{
-				new FastestAnimal
+			new FastestAnimal
 				{
 					Id = 1,
 					AnimalName = "Cheetah",
@@ -164,9 +161,21 @@ namespace WebAppAngularJsHelloWorld.Controllers
 					SpeedDoubleMph = 43,
 					Data =
 						"Thomson's gazelles, being long-distance runners, can escape cheetahs by sheer endurance. Their speed is partially due to their \"stotting\", or bounding leaps."
-				},
-			};
+				}
+		};
 
+		[HttpGet]
+		[Route("")]
+		public IEnumerable<FastestAnimal> Get()
+		{
+			return _animals;
+		}
+
+		[HttpGet]
+		[Route("{id}")]
+		public FastestAnimal Get(long id)
+		{
+			return _animals.Find(t => t.Id == id);
 		}
 	}
 }

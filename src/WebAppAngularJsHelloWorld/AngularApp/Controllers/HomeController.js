@@ -15,12 +15,14 @@
 
     function HomeController($scope, $log, FastestAnimalService) {
     	$log.info("HomeController called");
-    	$scope.message = "c-HomeController";
+    	$scope.message = "Home";
 
-    	$scope.getAnimals = function() {
+    	var getAnimals = function() {
     		FastestAnimalService.getAnimals()
 			    .then(onSuccess, onError);
     	}
+
+    	getAnimals();
 
     	function onSuccess(response) {
     		$scope.animals = response;

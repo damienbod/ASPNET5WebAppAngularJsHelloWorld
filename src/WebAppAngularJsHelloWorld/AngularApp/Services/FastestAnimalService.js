@@ -13,8 +13,17 @@
 			});
 		}
 
+		var getAnimal = function (id) {
+			$log.info("FastestAnimalService getAnimal called");
+			return $http.get("/api/FastestAnimal/" + id)
+			.then(function (response) {
+				return response.data;
+			});
+		}
+
 		return {
-			getAnimals: getAnimals
+			getAnimals: getAnimals,
+			getAnimal: getAnimal
 		}
 	}
 

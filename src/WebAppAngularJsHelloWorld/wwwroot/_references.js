@@ -13,3 +13,4 @@
 /// <reference path="../AngularApp/index.js" />
 /// <reference path="../AngularApp/Controllers/DetailsController.js" />
 /// <reference path="../angularapp/services/fastestanimalservice.js" />
+/// <reference path="lib/bootstrap/js/npm.js" />
