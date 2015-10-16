@@ -24,24 +24,22 @@ namespace WebAppAngularJsHelloWorld
 
         }
 
-        // Configure is called after ConfigureServices is called.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerfactory)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            loggerfactory.AddConsole();
+            loggerFactory.MinimumLevel = LogLevel.Information;
+            loggerFactory.AddConsole();
+            loggerFactory.AddDebug();
 
-            // Add static files to the request pipeline.
+            app.UseIISPlatformHandler();
+
+            app.UseExceptionHandler("/Home/Error");
+
             app.UseStaticFiles();
-
-            // Add MVC to the request pipeline.
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller}/{action}/{id?}",
-                    defaults: new { controller = "Home", action = "Index" });
-
-                // Uncomment the following line to add a route for porting Web API 2 controllers.
-                //routes.MapWebApiRoute("DefaultApi", "api/{controller}/{id?}");
+                    template: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }
