@@ -6,3 +6,7 @@ src/WebAppAngularJsHelloWorld/node_modules
 src/WebAppAngularJsHelloWorld/WebAppAngularJsHelloWorld.kproj.user
 src/WebAppAngularJsHelloWorld/wwwroot/bin
 src/WebAppAngularJsHelloWorld/WebAppAngularJsHelloWorld.xproj.user
+src/WebAppAngularJsHelloWorld/bin
+src/WebAppAngularJsHelloWorld/obj
+src/WebAppAngularJsHelloWorld/WebAppAngularJsHelloWorld.xproj.user
+src/WebAppAngularJsHelloWorld/project.lock.json
